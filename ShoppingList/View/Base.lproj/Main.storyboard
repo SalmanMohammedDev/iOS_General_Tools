@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Adding Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddingPageViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,8 +70,8 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CUz-Ob-Q4t">
                                                 <rect key="frame" x="37" y="65.5" width="300" height="84"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-fj-vuP">
-                                                        <rect key="frame" x="63.5" y="0.0" width="173.5" height="29"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdv-fj-vuP">
+                                                        <rect key="frame" x="29.5" y="0.0" width="241" height="29"/>
                                                         <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -103,6 +103,9 @@
                                                 <state key="normal" title="Button">
                                                     <color key="titleColor" red="0.10804345460000001" green="0.26233467459999998" blue="0.28235751390000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="nameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GUj-ig-tdK"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -123,10 +126,75 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="decription" destination="0h2-sX-4PU" id="Vq5-xf-Sq4"/>
+                        <outlet property="nameField" destination="FYU-ZA-Im8" id="m0I-Gz-IiT"/>
+                        <segue destination="txI-A9-0f5" kind="presentation" identifier="goToResult" id="Rzo-ZW-F2k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="116.51785714285714"/>
         </scene>
+        <!--Shopping List Page View Controller-->
+        <scene sceneID="6Lm-65-3cQ">
+            <objects>
+                <viewController id="txI-A9-0f5" customClass="ShoppingListPageViewController" customModule="ShoppingList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nmY-FV-AwY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SBC-Dc-8qr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="bottom" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="AHw-0a-IK0">
+                                        <rect key="frame" x="20" y="20" width="374" height="822"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2FD-WP-Igo">
+                                                <rect key="frame" x="293" y="0.0" width="81" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                <state key="normal" title="Button" image="plus.rectangle.fill" catalog="system"/>
+                                                <connections>
+                                                    <action selector="addingButton:" destination="txI-A9-0f5" eventType="touchUpInside" id="1vG-df-8KM"/>
+                                                </connections>
+                                            </button>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pIQ-Tt-uB8">
+                                                <rect key="frame" x="0.0" y="24" width="374" height="798"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </tableView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="AHw-0a-IK0" secondAttribute="bottom" id="CCg-47-3ah"/>
+                                    <constraint firstAttribute="trailing" secondItem="AHw-0a-IK0" secondAttribute="trailing" constant="20" symbolic="YES" id="NFx-Iw-dBZ"/>
+                                    <constraint firstItem="AHw-0a-IK0" firstAttribute="leading" secondItem="SBC-Dc-8qr" secondAttribute="leading" constant="20" symbolic="YES" id="gNc-3I-2xr"/>
+                                    <constraint firstItem="AHw-0a-IK0" firstAttribute="top" secondItem="SBC-Dc-8qr" secondAttribute="top" constant="20" symbolic="YES" id="q7O-8i-txr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SBC-Dc-8qr" secondAttribute="bottom" id="NyY-zC-XMP"/>
+                            <constraint firstItem="SBC-Dc-8qr" firstAttribute="top" secondItem="nmY-FV-AwY" secondAttribute="top" id="O6X-3L-R6I"/>
+                            <constraint firstItem="SBC-Dc-8qr" firstAttribute="centerX" secondItem="nmY-FV-AwY" secondAttribute="centerX" id="PFY-a5-x3X"/>
+                            <constraint firstItem="SBC-Dc-8qr" firstAttribute="centerY" secondItem="nmY-FV-AwY" secondAttribute="centerY" id="YWW-Q5-r4C"/>
+                            <constraint firstItem="SBC-Dc-8qr" firstAttribute="leading" secondItem="nmY-FV-AwY" secondAttribute="leading" id="e8e-uM-jo4"/>
+                            <constraint firstAttribute="trailing" secondItem="SBC-Dc-8qr" secondAttribute="trailing" id="egw-Mg-2MA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DfL-ER-QQe"/>
+                    </view>
+                    <connections>
+                        <outlet property="shoppingTable" destination="pIQ-Tt-uB8" id="OnI-mB-GNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oND-bH-LAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940.57971014492762" y="116.51785714285714"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="plus.rectangle.fill" catalog="system" width="64" height="46"/>
+    </resources>
 </document>

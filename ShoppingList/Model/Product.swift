@@ -10,35 +10,21 @@ import UIKit
 
 struct Product {
     var name: String?
-    var amount: Double?
-    var number: Int?
-    var size: String? //Small-Meduim-Large
     var describe: String?
+    var name2: String?
     
-    func getName(name: String) -> String {
+    func getName2() -> String{
+        return name2 ?? "Emptey"
+    }
+    mutating func getName(name: String) -> String {
         
+        name2 = name
         return name
     }
-    func getAmount(amount: Double) -> Double {
-        
-        return amount
-    }
-    func getNumber(number: Int) -> Int {
-        
-        return number
-    }
-    func getSize(size: String) -> String {
-        
-        return size
-    }
+ 
     func getDescribe(describe: String) -> String {
         
         return describe
     }
-    
-    
-    
-    
-    
-    
+
 }
