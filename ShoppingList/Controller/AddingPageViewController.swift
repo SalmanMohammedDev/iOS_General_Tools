@@ -18,7 +18,6 @@ class AddingPageViewController: UIViewController {
     
    var product = Product()
    
-    
 
     
     override func viewDidLoad() {
@@ -26,24 +25,29 @@ class AddingPageViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
     @IBAction func nameButton(_ sender: UIButton) {
         let enterdName = nameField.text
       //  var name = nameLabel.text
-        nameField.endEditing(true)
+       
 
+        
         nameField.text = product.getName(name: enterdName!)
         self.performSegue(withIdentifier: "goToResult", sender: self)
+        
+        
 
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "goToResult" {
-               let destinationVC = segue.destination as! ShoppingListPageViewController
-            destinationVC.productName = product.getName2()
-//               destinationVC.bmiAdvice = calculatorBrain.getAdvice()
-//               destinationVC.bmiColor = calculatorBrain.getColor()
-
-           }
-       }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//           if segue.identifier == "goToResult" {
+//               let destinationVC = segue.destination as! ShoppingListPageViewController
+//            destinationVC.productName = product.getName2()
+//
+////               destinationVC.bmiAdvice = calculatorBrain.getAdvice()
+////               destinationVC.bmiColor = calculatorBrain.getColor()
+//
+//           }
+//       }
     
 }
 
