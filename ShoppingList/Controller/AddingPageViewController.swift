@@ -19,10 +19,23 @@ class AddingPageViewController: UIViewController {
    var product = Product()
    
 
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        titleLabel.text = ""
+              var charIndex = 0.0
+              let textTitle = "SuperApp💥"
+              for latter in textTitle {
+                  print("-")
+                  print(0.1 * charIndex)
+                  print(latter)
+                  Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
+                      self.titleLabel.text?.append(latter)
+
+                  }
+                  charIndex += 1
+              }
     }
 
     
