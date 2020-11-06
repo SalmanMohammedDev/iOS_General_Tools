@@ -10,13 +10,30 @@ import UIKit
 
 class AthkarPageViewController: UIViewController {
 
+   
+    @IBOutlet weak var collectoinButton: CustomButtons!
+    @IBOutlet weak var sleepButton: CustomButtons!
+    @IBOutlet weak var nightButton: CustomButtons!
+    @IBOutlet weak var prayingButton: CustomButtons!
+    @IBOutlet weak var afterPrayingButton: CustomButtons!
+    
+    @IBOutlet weak var morningButton: CustomButtons!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        morningButton.setupButton()
+        collectoinButton.setupButton()
+        sleepButton.setupButton()
+        nightButton.setupButton()
+        prayingButton.setupButton()
+        afterPrayingButton.setupButton()
+        
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func morningButton(_ sender: CustomButtons) {
+    }
+    
     /*
     // MARK: - Navigation
 

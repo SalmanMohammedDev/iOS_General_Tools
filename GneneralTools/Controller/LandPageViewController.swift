@@ -12,26 +12,41 @@ class LandPageViewController: UIViewController {
     
     
     @IBOutlet weak var LandTitle: UILabel!
+    @IBOutlet weak var athkarButton: CustomButtons!
+    @IBOutlet weak var vatButton: CustomButtons!
+    @IBOutlet weak var weatherButton: CustomButtons!
+    @IBOutlet weak var shoppingButton: CustomButtons!
+    @IBOutlet weak var pomodoroButton: CustomButtons!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.LandTitle.text?.removeAll()
-
-         var charIndex = 0.0
-                let textTitle = "SuperApp💥"
-                for latter in textTitle {
-                    print("-")
-                    print(0.1 * charIndex)
-                    print(latter)
-                    Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
-                        self.LandTitle.text?.append(latter)
         
-                    }
-                    charIndex += 1
-                }
-
+        var charIndex = 0.0
+        let textTitle = "SuperApp💥"
+        for latter in textTitle {
+            print("-")
+            print(0.1 * charIndex)
+            print(latter)
+            Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
+                self.LandTitle.text?.append(latter)
+                
+            }
+            charIndex += 1
+        }
+        
         // Do any additional setup after loading the view.
+        
+        
+        athkarButton.setupButton()
+        vatButton.setupButton()
+        weatherButton.setupButton()
+        shoppingButton.setupButton()
+        pomodoroButton.setupButton()
+        
+        
+        
     }
     @IBAction func GoToWeaher(_ sender: UIButton) {
     }
@@ -48,13 +63,13 @@ class LandPageViewController: UIViewController {
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

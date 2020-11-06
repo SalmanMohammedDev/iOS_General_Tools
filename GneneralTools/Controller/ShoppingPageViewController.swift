@@ -22,13 +22,15 @@ class ShoppingPageViewController: UIViewController, UITextFieldDelegate {
         
         
         
-        addProductButtonOutlet.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
-        addProductButtonOutlet.layer.cornerRadius = 20
-        addProductButtonOutlet.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
-        
-        shoppingListOutlet.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
-        shoppingListOutlet.textColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+//        addProductButtonOutlet.backgroundColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+//        addProductButtonOutlet.layer.cornerRadius = 15.0
+//        addProductButtonOutlet.tintColor = #colorLiteral(red: 1, green: 0.3411764706, blue: 0.1333333333, alpha: 1)
+//        
+//        addProductButtonOutlet.setTitle("Add", for: .normal)
+//        
+//        
+//        shoppingListOutlet.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+//        shoppingListOutlet.textColor = #colorLiteral(red: 1, green: 0.3411764706, blue: 0.1333333333, alpha: 1)
         
         
         
