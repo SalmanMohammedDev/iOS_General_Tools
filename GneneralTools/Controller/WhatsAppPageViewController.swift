@@ -8,15 +8,30 @@
 
 import UIKit
 
-class WhatsAppPageViewController: UIViewController {
+class WhatsAppPageViewController: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var phoneNumber: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        phoneNumber.delegate = self
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func chatButton(_ sender: UIButton) {
+        AddingPhoneNumber()
+        phoneNumber.text = "Ex.05xxxxxxxx"
+    }
+    func AddingPhoneNumber() {
+        if phoneNumber.text != "" && phoneNumber.text != nil {
+            let number = phoneNumber.text!
+            guard let url = URL(string: "https://api.whatsapp.com/send?phone=+966\(number)") else { return }
+            UIApplication.shared.open(url)
+                
+            }
+        }
+   
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +42,5 @@ class WhatsAppPageViewController: UIViewController {
     }
     */
 
-}
+
+

@@ -12,6 +12,7 @@
 		26393DB7245653C900B2AF63 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB4245653C900B2AF63 /* 2.mp3 */; };
 		26393DB8245653C900B2AF63 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB5245653C900B2AF63 /* 3.mp3 */; };
 		26393DBA24565B6300B2AF63 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB924565B6200B2AF63 /* 4.mp3 */; };
+		26C6B98E256AABD500B36DAD /* WhatsAppPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6B98D256AABD500B36DAD /* WhatsAppPageViewController.swift */; };
 		26CB52CC244CB5BB00AE3661 /* MornningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB52CB244CB5BB00AE3661 /* MornningViewController.swift */; };
 		26EFD00B2438DCF8006FD7FF /* LandPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655173A2437872100F2F633 /* LandPageViewController.swift */; };
 		26EFD00C2438DCF8006FD7FF /* ShoppingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DD347D23FDEA3C00F4D43C /* ShoppingPageViewController.swift */; };
@@ -37,6 +38,7 @@
 		2655173624377F5000F2F633 /* WeatharPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatharPageViewController.swift; sourceTree = "<group>"; };
 		265517382437802B00F2F633 /* PomodoroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPageViewController.swift; sourceTree = "<group>"; };
 		2655173A2437872100F2F633 /* LandPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandPageViewController.swift; sourceTree = "<group>"; };
+		26C6B98D256AABD500B36DAD /* WhatsAppPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppPageViewController.swift; sourceTree = "<group>"; };
 		26CB52CB244CB5BB00AE3661 /* MornningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MornningViewController.swift; sourceTree = "<group>"; };
 		26DD347D23FDEA3C00F4D43C /* ShoppingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingPageViewController.swift; sourceTree = "<group>"; };
 		26F7140623DCDE87000D426D /* GeneralTool .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeneralTool .app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 				2655173224377EA800F2F633 /* VatPageViewController.swift */,
 				2630AFE8244E081E00870BC0 /* Athkar */,
 				2655173624377F5000F2F633 /* WeatharPageViewController.swift */,
+				26C6B98D256AABD500B36DAD /* WhatsAppPageViewController.swift */,
 				265517382437802B00F2F633 /* PomodoroPageViewController.swift */,
 			);
 			path = Controller;
@@ -218,6 +221,7 @@
 				26EFD00D2438DCF8006FD7FF /* VatPageViewController.swift in Sources */,
 				26EFD00E2438DCF8006FD7FF /* AthkarPageViewController.swift in Sources */,
 				26EFD00F2438DCF8006FD7FF /* WeatharPageViewController.swift in Sources */,
+				26C6B98E256AABD500B36DAD /* WhatsAppPageViewController.swift in Sources */,
 				26EFD0102438DCF8006FD7FF /* PomodoroPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -350,7 +354,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

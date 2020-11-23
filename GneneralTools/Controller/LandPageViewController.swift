@@ -11,17 +11,20 @@ import UIKit
 class LandPageViewController: UIViewController {
     
     
-    @IBOutlet weak var LandTitle: UILabel!
+  //  @IBOutlet weak var LandTitle: UILabel!
     @IBOutlet weak var athkarButton: CustomButtons!
     @IBOutlet weak var vatButton: CustomButtons!
     @IBOutlet weak var weatherButton: CustomButtons!
     @IBOutlet weak var shoppingButton: CustomButtons!
     @IBOutlet weak var pomodoroButton: CustomButtons!
     
+    @IBOutlet weak var QuickWhatsApp: CustomButtons!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.LandTitle.text?.removeAll()
+     //  self.LandTitle.text?.removeAll()
         
         var charIndex = 0.0
         let textTitle = "SuperApp💥"
@@ -30,7 +33,7 @@ class LandPageViewController: UIViewController {
             print(0.1 * charIndex)
             print(latter)
             Timer.scheduledTimer(withTimeInterval: 0.1 * charIndex, repeats: false) { (timer) in
-                self.LandTitle.text?.append(latter)
+             //   self.LandTitle.text?.append(latter)
                 
             }
             charIndex += 1
@@ -44,11 +47,11 @@ class LandPageViewController: UIViewController {
         weatherButton.setupButton()
         shoppingButton.setupButton()
         pomodoroButton.setupButton()
-        
+        QuickWhatsApp.setupButton()
         
         
     }
-    @IBAction func GoToWeaher(_ sender: UIButton) {
+    @IBAction func GoToWeather(_ sender: UIButton) {
     }
     
     @IBAction func GoToPomodoro(_ sender: UIButton) {
@@ -62,6 +65,8 @@ class LandPageViewController: UIViewController {
         
     }
     
+    @IBAction func GoToWhatsApp(_ sender: UIButton) {
+    }
     /*
      // MARK: - Navigation
      
