@@ -11,7 +11,6 @@
 		26393DB6245653C900B2AF63 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB3245653C900B2AF63 /* 1.mp3 */; };
 		26393DB7245653C900B2AF63 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB4245653C900B2AF63 /* 2.mp3 */; };
 		26393DB8245653C900B2AF63 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB5245653C900B2AF63 /* 3.mp3 */; };
-		26393DBA24565B6300B2AF63 /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB924565B6200B2AF63 /* 4.mp3 */; };
 		26C6B98E256AABD500B36DAD /* WhatsAppPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26C6B98D256AABD500B36DAD /* WhatsAppPageViewController.swift */; };
 		26CB52CC244CB5BB00AE3661 /* MornningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CB52CB244CB5BB00AE3661 /* MornningViewController.swift */; };
 		26EFD00B2438DCF8006FD7FF /* LandPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2655173A2437872100F2F633 /* LandPageViewController.swift */; };
@@ -32,7 +31,6 @@
 		26393DB3245653C900B2AF63 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = ../../MyPlaygroundTimerProb.playground/Resources/1.mp3; sourceTree = "<group>"; };
 		26393DB4245653C900B2AF63 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 2.mp3; path = ../../MyPlaygroundTimerProb.playground/Resources/2.mp3; sourceTree = "<group>"; };
 		26393DB5245653C900B2AF63 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 3.mp3; path = ../../MyPlaygroundTimerProb.playground/Resources/3.mp3; sourceTree = "<group>"; };
-		26393DB924565B6200B2AF63 /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 4.mp3; path = ../../../../Downloads/4.mp3; sourceTree = "<group>"; };
 		2655173224377EA800F2F633 /* VatPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatPageViewController.swift; sourceTree = "<group>"; };
 		2655173424377F1F00F2F633 /* AthkarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarPageViewController.swift; sourceTree = "<group>"; };
 		2655173624377F5000F2F633 /* WeatharPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatharPageViewController.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				26393DB3245653C900B2AF63 /* 1.mp3 */,
 				26393DB4245653C900B2AF63 /* 2.mp3 */,
 				26393DB5245653C900B2AF63 /* 3.mp3 */,
-				26393DB924565B6200B2AF63 /* 4.mp3 */,
 				26F7141423DCDE88000D426D /* LaunchScreen.storyboard */,
 				26F7141723DCDE88000D426D /* Info.plist */,
 			);
@@ -200,7 +197,6 @@
 				26F7141623DCDE88000D426D /* LaunchScreen.storyboard in Resources */,
 				26393DB7245653C900B2AF63 /* 2.mp3 in Resources */,
 				26F7141323DCDE88000D426D /* Assets.xcassets in Resources */,
-				26393DBA24565B6300B2AF63 /* 4.mp3 in Resources */,
 				26F7141123DCDE87000D426D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

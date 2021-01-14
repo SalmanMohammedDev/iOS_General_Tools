@@ -116,7 +116,7 @@ class PomodoroPageViewController: UIViewController {
         } else if minForPomodoro == 0 && second == 0 {
             
             pomodoroLabel.text = "\(minForPomodoro):\(second)"
-            playSound(soundName: "4")
+            playSound(soundName: "3")
             
         } else if second == 0 {
             
@@ -137,7 +137,7 @@ class PomodoroPageViewController: UIViewController {
         } else if minForBreak == 0 && second2 == 0 {
             
             breakLabel.text = "\(minForBreak):\(second2)"
-            playSound(soundName: "4")
+            playSound(soundName: "3")
             
         } else if second2 == 0 {
             
