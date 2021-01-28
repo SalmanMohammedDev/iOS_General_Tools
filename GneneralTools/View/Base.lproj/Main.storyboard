@@ -296,6 +296,9 @@
                                                         <state key="normal" title="اذكار المساء">
                                                             <color key="titleColor" systemColor="systemIndigoColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <segue destination="hZf-eK-EVZ" kind="show" id="x4s-Jw-oFk"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRE-tC-zZo" customClass="CustomButtons" customModule="GeneralTool_" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="250" width="211.33333333333334" height="150"/>
@@ -887,6 +890,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcP-Cg-s9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.13043478260872" y="116.51785714285714"/>
+        </scene>
+        <!--أذكار المساء-->
+        <scene sceneID="5xi-s0-I9L">
+            <objects>
+                <viewController id="hZf-eK-EVZ" userLabel="أذكار المساء" customClass="MornningViewController" customModule="GeneralTool_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VCD-0W-0PH">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1sJ-Zm-eyn">
+                                <rect key="frame" x="20" y="88" width="388" height="804"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WgV-2g-OFl">
+                                        <rect key="frame" x="0.0" y="0.0" width="388" height="804"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgS-la-aOh">
+                                                <rect key="frame" x="0.0" y="0.0" width="388" height="402"/>
+                                                <string key="text">أعوذ بالله من الشيطان الرجيم
+
+اللَّهُ لا إِلٰهَ إِلّا هُوَ الحَىُّ القَيّومُ لا تَأخُذُهُ سِنَةٌ وَلا نَومٌ لَهُ ما فِى السَّمٰوٰتِ وَما فِى الأَرضِ مَن ذَا الَّذى يَشفَعُ عِندَهُ إِلّا بِإِذنِهِ يَعلَمُ ما بَينَ أَيديهِم وَما خَلفَهُم وَلا يُحيطونَ بِشَيءٍ مِن عِلمِهِ إِلّا بِما شاءَ وَسِعَ كُرسِيُّهُ السَّمٰوٰتِ وَالأَرضَ وَلا يَـٔودُهُ حِفظُهُما وَهُوَ العَلِىُّ العَظيمُ ٢٥٥ 
+
+من قالها حين يصبح أجير من الجن حتى يمسي ومن قالها حين يمسي أجير منهم حتى يصبح. (رواه الحاكم)
+
+(البقرة / 255)</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="textLabel"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-IZ-sH6">
+                                                <rect key="frame" x="0.0" y="402" width="388" height="402"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-EY-g2K">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194" height="402"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                        <state key="normal" title="الذكر التالي">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="nextButton:" destination="hZf-eK-EVZ" eventType="touchUpInside" id="ja3-9q-CoA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmI-9X-Cnc">
+                                                        <rect key="frame" x="194" y="0.0" width="194" height="402"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                        <state key="normal" title="الذكر السابق">
+                                                            <color key="titleColor" systemColor="labelColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="prevButton:" destination="hZf-eK-EVZ" eventType="touchUpInside" id="XtZ-2c-3Z0"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WgV-2g-OFl" secondAttribute="trailing" id="0Xf-eZ-uX8"/>
+                                    <constraint firstItem="WgV-2g-OFl" firstAttribute="top" secondItem="1sJ-Zm-eyn" secondAttribute="top" id="d3o-hf-Gc2"/>
+                                    <constraint firstAttribute="bottom" secondItem="WgV-2g-OFl" secondAttribute="bottom" id="dMn-ap-feF"/>
+                                    <constraint firstItem="WgV-2g-OFl" firstAttribute="leading" secondItem="1sJ-Zm-eyn" secondAttribute="leading" id="unq-Va-KKy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5HJ-IJ-5L0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="1sJ-Zm-eyn" secondAttribute="trailing" id="6I9-uH-4cA"/>
+                            <constraint firstItem="1sJ-Zm-eyn" firstAttribute="leading" secondItem="VCD-0W-0PH" secondAttribute="leadingMargin" id="Q9f-MN-snt"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="1sJ-Zm-eyn" secondAttribute="bottom" id="RVU-DR-Vss"/>
+                            <constraint firstItem="1sJ-Zm-eyn" firstAttribute="top" secondItem="VCD-0W-0PH" secondAttribute="topMargin" id="vc5-zj-lQv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="أذكار المساء" id="ogQ-q2-foR" userLabel="أذكار المساء"/>
+                    <connections>
+                        <outlet property="labelOfAtkar" destination="WgS-la-aOh" id="46o-3f-W6Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyg-JS-0C0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4573" y="-1093"/>
         </scene>
     </scenes>
     <resources>

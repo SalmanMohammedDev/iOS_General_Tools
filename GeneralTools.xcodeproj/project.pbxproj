@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		262D6DAC25C03794003EBEC2 /* AthkarFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262D6DAB25C03794003EBEC2 /* AthkarFunction.swift */; };
 		2630AFEA244E096800870BC0 /* customButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2630AFE9244E096800870BC0 /* customButtons.swift */; };
 		26393DB6245653C900B2AF63 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB3245653C900B2AF63 /* 1.mp3 */; };
 		26393DB7245653C900B2AF63 /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26393DB4245653C900B2AF63 /* 2.mp3 */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		262D6DAB25C03794003EBEC2 /* AthkarFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthkarFunction.swift; sourceTree = "<group>"; };
 		2630AFE9244E096800870BC0 /* customButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButtons.swift; sourceTree = "<group>"; };
 		26393DB3245653C900B2AF63 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 1.mp3; path = ../../MyPlaygroundTimerProb.playground/Resources/1.mp3; sourceTree = "<group>"; };
 		26393DB4245653C900B2AF63 /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 2.mp3; path = ../../MyPlaygroundTimerProb.playground/Resources/2.mp3; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				2655173424377F1F00F2F633 /* AthkarPageViewController.swift */,
 				26CB52CB244CB5BB00AE3661 /* MornningViewController.swift */,
+				262D6DAB25C03794003EBEC2 /* AthkarFunction.swift */,
 				2630AFE9244E096800870BC0 /* customButtons.swift */,
 			);
 			path = Athkar;
@@ -216,6 +219,7 @@
 				26EFD00C2438DCF8006FD7FF /* ShoppingPageViewController.swift in Sources */,
 				26EFD00D2438DCF8006FD7FF /* VatPageViewController.swift in Sources */,
 				26EFD00E2438DCF8006FD7FF /* AthkarPageViewController.swift in Sources */,
+				262D6DAC25C03794003EBEC2 /* AthkarFunction.swift in Sources */,
 				26EFD00F2438DCF8006FD7FF /* WeatharPageViewController.swift in Sources */,
 				26C6B98E256AABD500B36DAD /* WhatsAppPageViewController.swift in Sources */,
 				26EFD0102438DCF8006FD7FF /* PomodoroPageViewController.swift in Sources */,
